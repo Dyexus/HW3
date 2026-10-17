@@ -1,3 +1,9 @@
+INSERT INTO USER (userId,userName,password,firstName,lastName,role) VALUES ('1','bsmith','$2y$12$5I0qypHTi/iBkV68TRMeaOf9D92cJJt0QP7yMTHP.J1rjVMw1gATC','Bob','Smith','Admin');
+INSERT INTO USER (userId,userName,password,firstName,lastName,role) VALUES ('2','pjones','$2y$12$.xLofId3Zxd8ygjzDiKCzeLwVvmxYb1lNu0LgcVkZklBsxVuP8jfS','Pat','Jones','Customer');
+INSERT INTO USER (userId,userName,password,firstName,lastName,role) VALUES ('3','customer3','$2y$12$p.kCEjP2V2qo.Vr6KeTS5.fu9pa87.ZiRKduwopabZCWQ2qbzj6cq','Demo','Three','Customer');
+INSERT INTO USER (userId,userName,password,firstName,lastName,role) VALUES ('4','customer4','$2y$12$35wgHOjBc5tq1KeEoUQyFuK8n7gWyg9NJpUYXsNTbCNgAK.uMCbjW','Demo','Four','Customer');
+INSERT INTO USER (userId,userName,password,firstName,lastName,role) VALUES ('5','customer5','$2y$12$eEmLAIk6ehzRJxfoqCZZUOZ0p26opdaqPBLV.ItmJWlpiVgsrz.sW','Demo','Five','Customer');
+
 BEGIN TRANSACTION;
 
 INSERT INTO ACCOUNT (userId, accountType, points) VALUES

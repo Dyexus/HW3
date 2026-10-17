@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/includes/authorization.php';
+
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/validation.php';
 
@@ -55,6 +57,8 @@ require_once __DIR__ . '/includes/nav.php';
             <dd><?= escape(number_format((int) $card['points'])) ?></dd>
         </dl>
 
+        <p><a href="/redeem.php?card_id=<?= escape($cardId) ?>">Redeem Gift Card</a></p>
+        <?php if (($_SESSION['role'] ?? '') === 'Admin'): ?>
         <div class="actions">
             <a href="/card-update.php?card_id=<?= escape($cardId) ?>">
                 Update Gift Card
@@ -63,6 +67,7 @@ require_once __DIR__ . '/includes/nav.php';
                 Delete Gift Card
             </a>
         </div>
+        <?php endif; ?>
     <?php endif; ?>
 
     <p><a href="/card-list.php">Return to Gift Card List</a></p>
