@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect x="10" y="10" width="580" height="340" rx="28" fill="#d71920"/>
+  <rect x="10" y="240" width="580" height="70" fill="#a81117"/>
+  <text x="50" y="100" fill="white" font-family="Arial, sans-serif" font-size="40">AirAsia Rewards</text>
+  <text x="50" y="180" fill="white" font-family="Arial, sans-serif" font-size="54" font-weight="bold">GIFT CARD</text>
+  <text x="50" y="285" fill="white" font-family="Arial, sans-serif" font-size="24">Class Project</text>
+</svg>
